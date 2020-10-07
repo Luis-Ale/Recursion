@@ -1,0 +1,46 @@
+def Sumatoria_iterativa(n):
+    for i in range(1, n+1):
+        if i == 1:
+            print(i)
+        else:
+            print(i+(i-1))
+def Factorial_iterativa(n):
+    for i in range(1, n+1):
+        if i == 1:
+            print(i)
+        else:
+            print(i*(i-1))
+def Sumatoria_recursion(n):
+    if n == 1:
+        return n
+    else:
+        return n+Sumatoria_recursion(n-1)
+def Factorial_recursion(n):
+    if n == 1:
+        return n
+    else:
+        return n+Factorial_recursion(n-1)
+
+def Euclides_recursion(x,y):
+    if y == 0:
+        return x
+    else:
+        return Euclides_recursion(y, x%y)
+
+def Sumatoria_sin_recursion(n):
+    if n == 1:
+        return n
+    else:
+        return n+(n-1)
+def Factorial_sin_recursion(n):
+    if n == 1:
+        return n
+    else:
+        return n+(n-1)
+
+def Euclides_sin_recursion(x,y):
+    if y == 0:
+        return x
+    else:
+        return (y, x%y)
+a = int(input("Numero: "))
